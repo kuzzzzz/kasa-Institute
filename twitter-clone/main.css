@@ -1,0 +1,46 @@
+body {
+  background-color: white;
+  display: flex;
+  margin: 0;
+}
+
+.left {
+  background-color: rgb(96, 96, 230);
+  display: flex;
+  align-items: center;
+  height: 100vh;
+
+  width: 50%;
+}
+
+li {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  font-family: "Segoe UI", Roboto, Ubuntu, "Helvetica Neue", sans-serif;
+  padding-bottom: 20px;
+  color: white;
+}
+
+span {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  margin-right: 20px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+img {
+  width: 30px;
+  margin-right: 20px;
+}
+.search {
+  background-image: url(./icons/loupe.svg);
+}
+.people {
+  background-image: url(./icons/group.svg);
+}
+.message {
+  background-image: url(./icons/speech-bubble.svg);
+}
