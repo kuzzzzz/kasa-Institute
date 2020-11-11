@@ -2,15 +2,26 @@ body {
   background-color: white;
   display: flex;
   margin: 0;
+  font-family: "Segoe UI", Roboto, Ubuntu, "Helvetica Neue", sans-serif;
 }
 
 .left {
-  background-color: rgb(96, 96, 230);
+  background-color: rgb(29, 161, 242);
   display: flex;
   align-items: center;
   height: 100vh;
-
   width: 50%;
+}
+
+.right {
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  width: 50%;
+}
+
+.right div {
+  margin-left: 20px;
 }
 
 li {
@@ -20,27 +31,60 @@ li {
   font-family: "Segoe UI", Roboto, Ubuntu, "Helvetica Neue", sans-serif;
   padding-bottom: 20px;
   color: white;
+  font-weight: bold;
 }
 
-span {
-  display: inline-block;
-  width: 30px;
-  height: 30px;
-  margin-right: 20px;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-}
 img {
   width: 30px;
   margin-right: 20px;
 }
-.search {
-  background-image: url(./icons/loupe.svg);
+.logo {
+  margin-left: 1rem;
+  width: 60px;
 }
-.people {
-  background-image: url(./icons/group.svg);
+h1 {
+  width: 380px;
+  margin-left: 1rem;
 }
-.message {
-  background-image: url(./icons/speech-bubble.svg);
+
+.login-details {
+  display: flex;
+  flex-direction: column;
+}
+
+a {
+  width: 350px;
+  border: 1px solid rgb(29, 161, 242);
+  border-radius: 20px;
+  text-align: center;
+  margin-bottom: 1rem;
+  padding: 8px 0;
+  text-decoration: none;
+  color: rgb(29, 161, 242);
+  font-weight: bold;
+}
+
+.primary-btn {
+  color: white;
+  background-color: rgb(29, 161, 242);
+}
+
+@media (max-width: 800px) {
+  body {
+    flex-direction: column;
+  }
+  .left {
+    order: 2;
+    width: 100%;
+    height: 200px;
+  }
+  .left ul {
+    margin-left: 4rem;
+  }
+  .right {
+    order: 1;
+    height: 60vh;
+    width: 80%;
+    margin: 0 auto;
+  }
 }
