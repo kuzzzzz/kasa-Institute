@@ -69,18 +69,35 @@ a {
   background-color: rgb(29, 161, 242);
 }
 
+.this {
+  animation: example 5s infinite;
+}
 
-
-@media (max-width:780px){
- 
- body{
+@media (max-width: 780px) {
+  body {
     flex-direction: column;
   }
 
-  .left{
+  .left {
     order: 2;
     width: 100%;
   }
- 
 }
 
+@keyframes example {
+  0% {
+    color: brown;
+    transform: rotate(0deg);
+  
+  }
+  50% {
+    color: rgb(165, 147, 42);
+  }
+  60% {
+    color: rgb(42, 71, 165);
+  }
+  100% {
+    color: rgb(49, 45, 45); 
+     transform: rotate(360deg)
+  }
+}
