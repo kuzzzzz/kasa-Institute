@@ -7,30 +7,54 @@ body {
 
 .container {
   width: 300px;
-  height: 500px;
+  height:500px;
+  display:flex;
   position: relative;
   background-color: aquamarine;
+  align-items:flex-end;
+  justify-content:center;
+  border:1px solid red;
+  perspective:1000px;
+  gap:0;
+  overflow:hidden;
 }
 
 .red {
-  width: 50px;
-  position: absolute;
-  height: 50px;
+  width: 100px;
+  transition:height 1s;
+  height: 70px;
   background-color: red;
-  animation: example 5s infinite;
+  transform:rotateY(50deg);
+  
 }
+
+.red:hover{
+  height:200px
+}
+
 
 .blue {
-  width: 50px;
+  width:150px;
   height: 50px;
+  transition:height 1s;
+  transform:rotateY(-50deg);
   background-color: blue;
+animation: rotate 3s infinite;
+ 
+
 }
 
-@keyframes example {
+.blue:hover{
+    height:100px;
+animation: rotate 3s infinite;
+
+}
+
+@keyframes rotate {
   0% {
-    transform: rotate(0);
+    transform: rotateY(0);
   }
   100% {
-    transform: rotate(360deg);
+    transform: rotateY(360deg);
   }
 }
