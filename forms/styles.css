@@ -1,0 +1,11 @@
+form {
+  display: flex;
+  width: 500px;
+  flex-direction: column;
+  margin: 20px auto;
+}
+form input,textarea{
+    padding: 1rem;
+    margin: 10px;
+}
+.error {color: #FF0000;}

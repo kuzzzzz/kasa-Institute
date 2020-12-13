@@ -1,0 +1,4 @@
+
+
+<!-- insert this specila charact to test if a site has htmlspeicalchars -->
+   <!-- /%22%3E%3Cscript%3Ealert('hacked')%3C/script%3E -->
