@@ -1,0 +1,103 @@
+body {
+  background-color: white;
+  display: flex;
+  margin: 0;
+  font-family: "Segoe UI", Roboto, Ubuntu, "Helvetica Neue", sans-serif;
+}
+
+.left {
+  background-color: rgb(29, 161, 242);
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  width: 50%;
+}
+
+.right {
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  width: 50%;
+}
+
+.right div {
+  margin-left: 20px;
+}
+
+li {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  font-family: "Segoe UI", Roboto, Ubuntu, "Helvetica Neue", sans-serif;
+  padding-bottom: 20px;
+  color: white;
+  font-weight: bold;
+}
+
+img {
+  width: 30px;
+  margin-right: 20px;
+}
+.logo {
+  margin-left: 1rem;
+  width: 60px;
+}
+h1 {
+  width: 380px;
+  margin-left: 1rem;
+}
+
+.login-details {
+  display: flex;
+  flex-direction: column;
+}
+
+a {
+  width: 350px;
+  border: 1px solid rgb(29, 161, 242);
+  border-radius: 20px;
+  text-align: center;
+  margin-bottom: 1rem;
+  padding: 8px 0;
+  text-decoration: none;
+  color: rgb(29, 161, 242);
+  font-weight: bold;
+}
+
+.primary-btn {
+  color: white;
+  background-color: rgb(29, 161, 242);
+}
+
+.this {
+  animation: example 5s infinite;
+}
+
+@media (max-width: 780px) {
+  body {
+    flex-direction: column;
+  }
+
+  .left {
+    order: 2;
+    width: 100%;
+  }
+}
+
+@keyframes example {
+  0% {
+    color: brown;
+    transform: rotate(0deg);
+  
+  }
+  50% {
+    color: rgb(165, 147, 42);
+  }
+  60% {
+    color: rgb(42, 71, 165);
+  }
+  100% {
+    color: rgb(49, 45, 45); 
+     transform: rotate(360deg)
+  }
+}
