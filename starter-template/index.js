@@ -68,3 +68,14 @@
 // write a for, while and do while  loop to print out ur name 10 times
 
 
+const family = ["precious", "otase", "monica"];
+
+family.map(function(v){
+    if(v =="monica"){
+        console.log("Mrs Atumah "+ v)
+        
+    }
+    console.log("Atumah "+ v);
+})
+
+
