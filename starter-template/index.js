@@ -71,11 +71,14 @@
 const family = ["precious", "otase", "monica"];
 
 family.map(function(v){
+
     if(v =="monica"){
         console.log("Mrs Atumah "+ v)
         
+    }else{
+         console.log("Atumah " + v);
     }
-    console.log("Atumah "+ v);
+   
 })
 
 
