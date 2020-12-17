@@ -9,7 +9,6 @@ $content = file($filename);
 $array = explode("||", $content[0]);
 $yes = $array[0];
 $no = $array[1];
-$maybe = $array[2];
 
 if ($vote == 0) {
   $yes = $yes + 1;
@@ -17,12 +16,9 @@ if ($vote == 0) {
 if ($vote == 1) {
   $no = $no + 1;
 }
-if ($vote == 2) {
-  $maybe = $maybe + 1;
-}
 
 //insert votes to txt file
-$insertvote = $yes."||".$no."||".$maybe;
+$insertvote = $yes."||".$no;
 $fp = fopen($filename,"w");
 fputs($fp,$insertvote);
 fclose($fp);
@@ -41,14 +37,9 @@ height='20'>
 <tr>
 <td>No:</td>
 <td><img src="poll.gif"
-width='<?php echo(100*round($no/($no+$yes+$maybe),2)); ?>'
+width='<?php echo(100*round($no/($no+$yes),2)); ?>'
 height='20'>
-<?php echo(100*round($no/($no+$yes+$maybe),2)); ?>%
+<?php echo(100*round($no/($no+$yes),2)); ?>%
 </td>
-<td>Maybe:</td>
-<td><img src="poll.gif"
-width='<?php echo(100*round($maybe/($no+$yes+$maybe),2)); ?>'
-height='20'>
-<?php echo(100*round($maybe/($no+$yes+$maybe),2)); ?>%</td>
 </tr>
 </table>

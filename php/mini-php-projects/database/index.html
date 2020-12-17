@@ -13,7 +13,7 @@
                         document.getElementById("txtHint").innerHTML = this.responseText;
                     }
                 };
-                xmlhttp.open("GET", "getuser.php?q=" + str, true);
+                xmlhttp.open("GET", "getuser.php?q="+str, true);
                 xmlhttp.send();
             }
         }
@@ -25,10 +25,10 @@
     <form>
         <select name="users" onchange="showUser(this.value)">
             <option value="">Select a person:</option>
-            <option value="4">Mary Moe </option>
-            <option value="2">Lois Griffin</option>
-            <option value="1">Joseph Swanson</option>
-            <option value="4">Glenn Quagmire</option>
+            <option value="4">Mary Moe</option>
+            <option value="2">John Doe</option>
+            <option value="1">John Doe</option>
+            <option value="5">Julie Dooley</option>
         </select>
     </form>
     <br>
